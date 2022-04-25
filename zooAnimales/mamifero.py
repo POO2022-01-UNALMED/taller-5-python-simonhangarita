@@ -34,4 +34,6 @@ class Mamifero(Animal):
   @classmethod
   def crearLeon(self,nombre,edad,genero):
     Mamifero.leones+=1
-    return Mamifero(nombre,edad,"selva",genero,True,4)  
+    return Mamifero(nombre,edad,"selva",genero,True,4) 
+  def isPelaje(self):
+    return self._pelaje
