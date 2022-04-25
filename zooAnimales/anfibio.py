@@ -37,3 +37,5 @@ class Anfibio(Animal):
     return Anfibio(nombre,edad,"selva",genero,"negro y amarillo",False)  
   def Movimiento(self):
     return "saltar"
+  def isVenenoso(self):
+    return self._venenoso
