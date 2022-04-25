@@ -21,6 +21,5 @@ class Zoologico:
   def cantidadTotalAnimales(self):
     x=0
     for i in self._zonas:
-      if (str(type(i).__name__)=="Zona"):
-        x+=i.cantidadAnimales()
+      x+=i.cantidadAnimales()
     return x
