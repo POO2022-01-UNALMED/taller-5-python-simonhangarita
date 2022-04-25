@@ -1,4 +1,3 @@
-import gestion.Zona
 from zooAnimales import *
 class Animal:
   _totalAnimales=0
