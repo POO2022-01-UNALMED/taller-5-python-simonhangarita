@@ -7,7 +7,7 @@ class Anfibio(Animal):
     super().__init__(nombre,edad,habitat,genero)
     self._colorPiel=pelaje
     self._venenoso=patas
-    Anfibio._listado[self]
+    Anfibio._listado.append(self)
     Animal.setTotalAnimales(Animal.getTotalAnimales()+1)
   @classmethod
   def setListado(cls,listado):
