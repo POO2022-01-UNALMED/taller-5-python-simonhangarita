@@ -38,9 +38,9 @@ class Animal:
     return "desplazarse"
   def toString(self):
     if self._zona is None:
-      return "Mi nombre es "+str(self._nombre)+", tengo una edad de "+str(self._edad)+", habito en"+str(self._habitat)+" y mi genero es "+str(self._genero)
+      return "Mi nombre es "+str(self._nombre)+", tengo una edad de "+str(self._edad)+", habito en "+str(self._habitat)+" y mi genero es "+str(self._genero)
     else:
-      return "Mi nombre es "+str(self._nombre)+", tengo una edad de "+str(self._edad)+", habito en"+str(self._habitat)+" y mi genero es "+str(self._genero)+", la zona en la que me ubico es"+str(self._zona)+", en el zoo"+str(self._zona.getZoo())
+      return "Mi nombre es "+str(self._nombre)+", tengo una edad de "+str(self._edad)+", habito en "+str(self._habitat)+" y mi genero es "+str(self._genero)+", la zona en la que me ubico es "+str(self._zona)+", en el zoo "+str(self._zona.getZoo())
   @classmethod
   def totalPorTipo(cls):
     from zooAnimales.anfibio import Anfibio
@@ -48,7 +48,7 @@ class Animal:
     from zooAnimales.mamifero import Mamifero
     from zooAnimales.pez import Pez
     from zooAnimales.reptil import Reptil
-    return "Mamiferos: "+str(Mamifero.cantidadMamiferos())+"\nAves: "+str(Ave.cantidadAves())+"\nReptiles: "+str(Reptil.cantidadReptiles())+"\nPeces: "+str(Pez.cantidadPeces())+"\nAnfibios: "+ str(Anfibio.cantidadAnfibios())
+    return f"Mamiferos : {Mamifero.cantidadMamiferos()}\nAves : {Ave.cantidadAves()}\nReptiles : {Reptil.cantidadReptiles()}\nPeces : {Pez.cantidadPeces()}\nAnfibios : {Anfibio.cantidadAnfibios()}" 
     
       
     
