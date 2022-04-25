@@ -21,6 +21,5 @@ class Zona:
   def cantidadAnimales(self):
     x=0
     for i in self._animales:
-      if (str(type(i).__name__)=="Animal"):
-        x+=1
+      x+=1
     return x 
