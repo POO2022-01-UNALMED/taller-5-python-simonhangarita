@@ -6,7 +6,7 @@ class Ave(Animal):
   def __init__(self,nombre,edad,habitat,genero,colorPlumas):
     super().__init__(nombre,edad,habitat,genero)
     self._colorPlumas=colorPlumas
-    Ave._listado[self]
+    Ave._listado.append(self)
     Animal.setTotalAnimales(Animal.getTotalAnimales()+1)
   @classmethod
   def setListado(cls,listado):
